@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background: #faf4f2;
+    padding: 112px 10vw;
+    font-size: 10px;
+}
+
+
+/*******************  header  ************/
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 167px;
+}
+
+.header__info-title {
+    color: #222;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.55em;
+}
+
+.header__info-description {
+    margin: 7px 0 54px 0;
+    color: #222;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67em;
+}
+
+.header__info-icons {
+    margin-bottom: 39px;
+}
+
+.header__button {
+    width: 151px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    cursor: pointer;
+}
+
+.request {
+    margin-right: 30px;
+    background: #ff2950;
+    color: #f9f9f9;
+}
+
+.cv {
+    border: 2px solid #ff9b70;
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.header__photo {
+    display: flex;
+    justify-content: center;
+}
+
+.header__photo img {
+    width: 406px;
+    height: 406px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*******************  section-project  ************/
