@@ -3,14 +3,17 @@
 * {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 .container,
 .reviews {
   width: 100%;
   height: auto;
+  /*margin: 0 auto;*/
+  /*padding: 0px 150px 0 150px;*/
+  padding: 0 calc((100vw - 1140px) / 2);
   background: #faf4f2;
-  padding: 112px 10vw;
   font-size: 10px;
 }
 
@@ -19,15 +22,15 @@
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 4vw;
+  column-gap: 50px;
+  padding-top: 100px;
 }
 
 .header__info {
-  padding-left: 2.222vw;
+  padding: 11px 0 0 32px;
 }
 
-.header__info-title,
-.advantages__title {
+.header__info-title {
   color: #222;
   font-size: 4em;
   font-style: normal;
@@ -36,7 +39,7 @@
 }
 
 .header__info-description {
-  margin: 7px 0 54px 0;
+  margin: 7px 0 50px 0;
   color: #222;
   font-size: 1.8em;
   font-style: normal;
@@ -45,7 +48,7 @@
 }
 
 .header__info-icons {
-  margin-bottom: 39px;
+  margin-bottom: 25px;
 }
 
 .header__button {
@@ -53,17 +56,15 @@
   height: 55px;
   border: none;
   border-radius: 10px;
-
   font-size: 1.8em;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
   cursor: pointer;
 }
 
 .request {
-  margin-right: 30px;
+  margin: 0 30px 0 0;
   background: #ff2950;
   color: #f9f9f9;
 }
@@ -76,7 +77,7 @@
 .header__photo {
   display: flex;
   justify-content: flex-end;
-  padding-right: 1.806vw;
+  padding-right: 25px;
 }
 
 .header__photo img {
@@ -90,12 +91,11 @@
 
 .project {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 430px 570px;
   column-gap: 32px;
   height: 519px;
   margin-top: 125px;
   padding: 62px 76px 63px 32px;
-
   border-radius: 35px;
   background: #ff7315;
 }
@@ -104,6 +104,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
 }
 
@@ -119,11 +120,11 @@
   color: #f9f9f9;
   font-size: 2.4em;
   font-weight: 400;
-  line-height: 1.5em; /* 150% */
+  line-height: 1.5em;
 }
 
 .project__content h2:nth-child(3) {
-  margin: 28px 0;
+  margin: 20px 0;
   color: #f9f9f9;
   font-size: 4.8em;
   font-weight: 600;
@@ -154,7 +155,13 @@
 
 .advantages__title {
   grid-area: title;
+
+  color: #222;
   text-align: center;
+  font-size: 4.8em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.29em;
 }
 
 .advantages__item {
@@ -215,7 +222,7 @@
 }
 
 .portfolio__title {
-  padding-top: 125px;
+  padding-top: 118px;
   color: #222;
   font-size: 4.8em;
   font-weight: 600;
@@ -229,7 +236,7 @@
   gap: 24px;
 
   width: max-content;
-  margin: 64px auto 0 auto;
+  margin: 57px auto 0 auto;
 }
 
 .gallery__item {
@@ -246,8 +253,7 @@
 /*******************  section-reviews  ************/
 
 .reviews {
-  padding-top: 48px;
-  padding-bottom: 185px;
+  padding: 49px 150px 185px 150px;
   background: #ff7315;
 }
 
@@ -263,15 +269,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 111px;
+  gap: 82px;
 }
 
 .reviews__content p {
-  width: 529px;
+  width: 100%;
   height: auto;
-  padding: 24px 55px;
+  padding: 24px 55px 15px 55px;
   border-radius: 30px;
   background: #f9f9f9;
-  text-align: center;
   color: #222;
   font-size: 2.4em;
   font-weight: 400;
