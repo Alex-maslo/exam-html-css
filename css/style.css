@@ -329,6 +329,7 @@
   line-height: 1.3em;
   text-transform: capitalize;
 }
+
 .plan__price {
   display: flex;
   justify-content: center;
@@ -336,6 +337,7 @@
   margin: 36px 0 0 0;
   gap: 13px;
 }
+
 .plan__price h4 {
   color: #2b2b2b;
   font-size: 3.2em;
@@ -358,11 +360,13 @@
   text-transform: capitalize;
   opacity: 0.5;
 }
+
 .plan__features {
   list-style: none;
   padding: 0;
   margin: 23px 0 0 48px;
 }
+
 .plan__feature {
   font-kerning: none;
   font-feature-settings: "calt" off;
@@ -372,9 +376,11 @@
   line-height: 40px;
   text-transform: capitalize;
 }
+
 .active {
   color: #222;
 }
+
 .active::before {
   content: "";
   display: inline-block;
@@ -387,6 +393,7 @@
 .not-active {
   opacity: 0.5;
 }
+
 .not-active::before {
   content: "";
   display: inline-block;
@@ -395,10 +402,43 @@
   height: 24px;
   margin: 0 16px -6px 0;
 }
+
 /**********************/
 .email-me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 140px;
   width: 1110px;
   height: 224px;
+  margin: 100px auto 185px auto;
   border-radius: 25px;
   background: #ff7315;
+}
+
+.email-me__title {
+  margin: 3px 0 0 78px;
+  color: #f9f9f9;
+  font-size: 3.6em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.72em; /* 172.222% */
+}
+
+.email-me__button {
+  width: 259px;
+  height: 70px;
+  margin: 0 0 0 32px;
+  border: none;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+
+  color: #222;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
