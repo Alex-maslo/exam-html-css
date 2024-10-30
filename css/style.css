@@ -7,7 +7,8 @@
 }
 
 .container,
-.reviews {
+.reviews,
+.footer {
   width: 100%;
   height: auto;
   padding: 0 calc((100vw - 1140px) / 2);
@@ -15,8 +16,18 @@
   font-size: 10px;
 }
 
-/*******************  header  ************/
+.advantages__title,
+.portfolio__title,
+.plans__title,
+.reviews__title,
+.blog__title {
+  font-size: 4.8em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25em; /* 125% */
+}
 
+/*******************  header  ************/
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -50,10 +61,13 @@
 }
 
 .header__button {
+  all: unset;
+
   width: 151px;
   height: 55px;
   border: none;
   border-radius: 10px;
+  text-align: center;
   font-size: 1.8em;
   font-style: normal;
   font-weight: 500;
@@ -83,7 +97,7 @@
   height: 406px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.2);
 }
 
 /*******************  section-project  ************/
@@ -123,7 +137,7 @@
 }
 
 .project__content h2:nth-child(3) {
-  margin: 20px 0;
+  margin: 19px 0;
   color: #f9f9f9;
   font-size: 4.8em;
   font-weight: 600;
@@ -154,13 +168,8 @@
 
 .advantages__title {
   grid-area: title;
-
   color: #222;
   text-align: center;
-  font-size: 4.8em;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.29em;
 }
 
 .advantages__item {
@@ -221,11 +230,8 @@
 }
 
 .portfolio__title {
-  padding-top: 118px;
+  margin-top: 125px;
   color: #222;
-  font-size: 4.8em;
-  font-weight: 600;
-  text-transform: capitalize;
 }
 
 .portfolio__gallery {
@@ -235,7 +241,7 @@
   gap: 24px;
 
   width: max-content;
-  margin: 57px auto 0 auto;
+  margin: 63px auto 0 auto;
 }
 
 .gallery__item {
@@ -291,13 +297,10 @@
 }
 
 .plans__title {
+  text-align: center;
   margin-bottom: 62px;
   color: #222;
-  font-size: 4.8em;
-  font-weight: 600;
-  line-height: 1.23em;
   text-transform: capitalize;
-  text-align: center;
 }
 
 .plans__content {
@@ -309,6 +312,7 @@
 .plan {
   width: 100%;
   height: 500px;
+  border-radius: 15px;
   box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.1);
 }
 
@@ -412,13 +416,13 @@
   column-gap: 140px;
   width: 1110px;
   height: 224px;
-  margin: 100px auto 185px auto;
+  margin: 100px auto 129px auto;
   border-radius: 25px;
   background: #ff7315;
 }
 
 .email-me__title {
-  margin: 3px 0 0 78px;
+  margin: 3px 0 0 75px;
   color: #f9f9f9;
   font-size: 3.6em;
   font-style: normal;
@@ -429,7 +433,7 @@
 .email-me__button {
   width: 259px;
   height: 70px;
-  margin: 0 0 0 32px;
+  margin: 0 0 0 26px;
   border: none;
   border-radius: 10px;
   background: #f9f9f9;
@@ -440,5 +444,76 @@
   font-size: 2.4em;
   font-style: normal;
   font-weight: 600;
+  line-height: normal;
+}
+
+/*************************** section blog ***************/
+
+.blog {
+  padding-bottom: 125px;
+}
+.blog__title {
+  color: #222;
+  margin: 0 0 45px 0;
+}
+
+.blog__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.blog__content-item {
+  width: 100%;
+  height: 364px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.blog__content-item-image {
+  height: 166px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.blog__content-item-title {
+  margin: 27px 0 13px 0;
+
+  color: #222;
+
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.23em;
+  text-transform: capitalize;
+}
+
+.blog__content-item-text {
+  color: rgba(34, 34, 34, 0.5);
+  font-kerning: none;
+  font-feature-settings: "calt" off;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2em;
+  text-transform: capitalize;
+}
+
+/*******************************/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  background: #f1f1f1;
+}
+.footer__text {
+  color: #222;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 }
