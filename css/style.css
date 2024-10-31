@@ -62,7 +62,7 @@
 
 .header__button {
   all: unset;
-
+  box-sizing: border-box;
   width: 151px;
   height: 55px;
   border: none;
